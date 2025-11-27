@@ -113,7 +113,6 @@ class IMCActivity : AppCompatActivity() {
 
                 height = height,
                 weight = weight,
-                age = age,
                 sex = if (maleIsSelected) {
                 "Male"
                 } else {
@@ -124,13 +123,14 @@ class IMCActivity : AppCompatActivity() {
             val intent = Intent(this, ResultActivity::class.java)
             intent.putExtra("EXTRA_IMC", imcResult)
             startActivity(intent)
+            finish()
 
 
         }
 
     }
 
-    fun CalculateIMC(height: Int, weight: Int, age: Int, sex: String): IMCResult {
+    fun CalculateIMC(height: Int, weight: Int, sex: String): IMCResult {
 
         val heightM = height / 100.0
         val imc = weight / (heightM * heightM)

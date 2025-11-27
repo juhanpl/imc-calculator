@@ -53,7 +53,7 @@
                 android:id="@+id/tvIMCResult"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                tools:text="29.43"
+                tools:text="24.93"
                 android:layout_marginTop="52dp"
                 android:layout_marginBottom="52dp"
                 android:textSize="66sp"
@@ -63,8 +63,8 @@
                 android:id="@+id/tvIMCDescription"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="26sp"
-                tools:text="Estas en lo optimo para tu peso y altura"
+                android:textSize="24sp"
+                tools:text="Mantén tus hábitos, estás en un rango saludable."
                 android:textColor="@color/white"/>
 
         </androidx.appcompat.widget.LinearLayoutCompat>
