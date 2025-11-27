@@ -5,8 +5,9 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_gravity="center"
     android:paddingHorizontal="16dp"
-    android:paddingVertical="32dp"
+    android:paddingVertical="120dp"
     android:background="@color/backgroundColor"
     tools:context=".IMCActivity">
 
@@ -16,7 +17,7 @@
         android:layout_width="0dp"
         android:layout_height="150dp"
         android:layout_marginEnd="16dp"
-        app:cardBackgroundColor="@color/black"
+        app:cardBackgroundColor="@color/cardColor"
         app:layout_constraintEnd_toStartOf="@id/cardFemale"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -26,8 +27,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:gravity="center"
-            android:background="@color/cardColor">
+            android:gravity="center">
 
             <ImageView
                 android:id="@+id/imgMale"
@@ -65,25 +65,24 @@
         <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:gravity="center">
+            android:gravity="center"
+            android:orientation="vertical">
 
             <ImageView
                 android:id="@+id/imgFemale"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
-                android:src="@drawable/ic_female"
-                app:tint="@color/white"
                 android:layout_marginBottom="10dp"
                 android:contentDescription="Female"
-                />
+                android:src="@drawable/ic_female"
+                app:tint="@color/white" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="mujer"
                 android:textAllCaps="true"
-                android:textColor="@color/textColor"/>
+                android:textColor="@color/textColor" />
 
         </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -118,7 +117,7 @@
                 android:id="@+id/tvHeight"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                tools:text="120 cm"
+                android:text="120 cm"
                 android:textColor="@color/white"
                 android:textStyle="bold"
                 android:textSize="36sp"
@@ -274,9 +273,10 @@
         android:layout_height="80dp"
         android:text="CALCULAR"
         android:textSize="16dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@id/cardAge"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:cornerRadius="5dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

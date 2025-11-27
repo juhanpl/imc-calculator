@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    id("kotlin-parcelize")
 }
 
 android {
@@ -34,6 +35,11 @@ android {
     }
     kotlinOptions {
         jvmTarget = "11"
+    }
+    kotlin {
+        compilerOptions {
+            freeCompilerArgs.add("-Xparcelize")
+        }
     }
 }
 
