@@ -1,7 +1,5 @@
 # BMI Calculator - Android
 
-**BMI Calculator** is a modern and intuitive mobile application developed in **Kotlin**. It allows users to calculate their Body Mass Index (BMI) by inputting gender, height, weight, and age, providing an immediate health status assessment based on a sleek, dark-themed UI.
-
 ---
 
 ## Installation and Execution
